@@ -78,14 +78,14 @@ export function app(): express.Express {
         }
         const params = req.params[0];
         var seo: any = {
-          title: 'Dating tube',
+          title: 'Latinagirls Video Tube',
           description:
             'Find like minded male or female unvaccinated organic humans!',
           image:
-            'https://tube.organic.dating/assets/Healing-Tube-Logo.jpg',
-          site: 'https://tube.organic.dating/',
-          url: 'https://tube.organic.dating' + params,
-          keywords: 'DatingTube',
+            'https://video.latinagirls.tube/assets/Healing-Tube-Logo.jpg',
+          site: 'https://video.latinagirls.tube/',
+          url: 'https://video.latinagirls.tube' + params,
+          keywords: 'LatinagirlsVideoTube',
         };
         if (
           params.indexOf('channel/') > -1
@@ -126,9 +126,9 @@ export function app(): express.Express {
           const pdhtml = document.createElement('div');
           pdhtml.innerHTML = post?.postdescription || post?.metadescription;
           const talent = {
-            name: post?.title || post?.albumname || 'Healing.Tube Post',
+            name: post?.title || post?.albumname || 'Latinagirls Video Tube Post',
             description: pdhtml?.textContent || 'Post content',
-            image: post?.thumbfilename || post?.metaimage || post?.imageUrl || 'https://tube.organic.dating/assets/Healing-Tube-Logo.jpg',
+            image: post?.thumbfilename || post?.metaimage || post?.imageUrl || 'https://video.latinagirls.tube/assets/Healing-Tube-Logo.jpg',
           };
           seo.title = talent.name;
           seo.description = strip_html_tags(talent.description);

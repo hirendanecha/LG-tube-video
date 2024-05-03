@@ -633,7 +633,7 @@ export class VideoComponent implements OnInit, OnChanges {
   }
 
   openProfile(Id): void {
-    const url = `https://tube.organic.dating/channel/${Id}`;
+    const url = `https://video.latinagirls.tube/channel/${Id}`;
     window.open(url, '_blank');
   }
 
