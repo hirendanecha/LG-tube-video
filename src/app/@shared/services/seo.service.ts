@@ -69,7 +69,7 @@ export class SeoService {
     }
 
     if (!tagValue.image) {
-      tagValue.image = 'https://video.latinagirls.tube/assets/Healing-Tube-Logo.jpg';
+      tagValue.image = 'https://video.latinagirls.tube/assets/banner/latinagirls-tube-Logo.png';
     }
 
     this.meta.updateTag({
