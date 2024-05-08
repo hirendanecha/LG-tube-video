@@ -78,7 +78,7 @@ export function app(): express.Express {
         }
         const params = req.params[0];
         var seo: any = {
-          title: 'Latinagirls.Video Tube',
+          title: 'LatinaGirls.tube',
           description:
             'Find like minded male or female unvaccinated organic humans!',
           image:
@@ -126,7 +126,7 @@ export function app(): express.Express {
           const pdhtml = document.createElement('div');
           pdhtml.innerHTML = post?.postdescription || post?.metadescription;
           const talent = {
-            name: post?.title || post?.albumname || 'Latinagirls.Video Tube Post',
+            name: post?.title || post?.albumname || 'LatinaGirls.tube Post',
             description: pdhtml?.textContent || 'Post content',
             image: post?.thumbfilename || post?.metaimage || post?.imageUrl || 'https://video.latinagirls.tube/assets/banner/latinagirls-tube-Logo.png',
           };
